@@ -1,0 +1,111 @@
+.furniture-sup-title {
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  text-align: center;
+  color: #616161;
+  margin-top: 40px;
+}
+
+.furniture-inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+}
+
+.furniture-left {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 41.3%;
+  flex-wrap: wrap;
+  margin-right: 6px;
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__img:nth-child(1) {
+    width: 187px;
+  }
+
+  &__img:nth-child(2) {
+    width: 308px;
+  }
+
+  &__img:nth-child(3) {
+    width: 261px;
+  }
+
+  &__img:nth-child(4) {
+    width: 234px;
+  }
+
+  &__img:nth-child(2) + &__img:nth-child(3),
+  &__img:nth-child(4) {
+    margin-top: 12px;
+  }
+}
+
+.furniture-right {
+  display: flex;
+  flex: 0 1 57.9%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 6px;
+
+  &__img {
+    object-fit: cover;
+    // width: 100%;
+  }
+
+  &__img:nth-child(1),
+  &__img:nth-child(3) {
+    max-width: 409px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__img:nth-child(2),
+  &__img:nth-child(4) {
+    width: 291px;
+  }
+
+  &__img:nth-child(2) + &__img:nth-child(3),
+  &__img:nth-child(4) {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 1255px) {
+  .furniture-inner {
+    flex-wrap: wrap;
+  }
+
+  .furniture-left {
+    flex: 0 1 100%;
+    justify-content: center;
+
+    &__img {
+      margin: 10px 5px;
+    }
+
+    &__img:nth-child(2) + &__img:nth-child(3),
+    &__img:nth-child(4) {
+      margin-top: 0;
+    }
+  }
+
+  .furniture-right {
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-left: 0;
+
+    &__img {
+      margin: 10px 5px;
+    }
+
+    &__img:nth-child(2) + &__img:nth-child(3),
+    &__img:nth-child(4) {
+      margin-top: 0;
+    }
+  }
+}

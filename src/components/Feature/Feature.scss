@@ -1,0 +1,63 @@
+.feature-inner {
+  display: flex;
+ 
+  justify-content: space-between;
+  margin-top: 7%;
+}
+
+.feature-item {
+  display: flex;
+  flex: 0 0 230px;
+  justify-content: space-between;
+
+  &__svg {
+    height: 40px;
+    width: 40px;
+    transition: all ease 1s;
+    cursor: pointer;
+
+    &:hover{
+        animation: iconanimation 2s infinite;;
+    }
+  }
+}
+
+.feature-description {
+  width: 220px;
+  padding-left: 20px;
+
+  &__title {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    color: #3a3a3a;
+  }
+
+  &__sub-title {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    color: #898989;
+  }
+}
+
+
+@keyframes iconanimation{
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    100%{
+      transform:  rotate(360deg);
+    }
+  }
+
+  @media(max-width:1050px){
+    .feature-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .feature-item{
+          margin-top: 20px;
+      }
+  }

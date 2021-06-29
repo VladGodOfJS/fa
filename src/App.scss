@@ -1,0 +1,43 @@
+@import 'reset.scss';
+@import './components/OurProducts/Products.scss';
+@import './components/Intro//Intro.scss';
+@import './components/Header/Header.scss';
+@import './components/Feature/Feature.scss';
+@import './components/Furniture/Furniture.scss';
+@import './components/Footer/Footer.scss';
+@import './components/commons/FormControls.scss';
+@import './components/Inspirations/Inspiration.scss';
+//общие стили
+
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/Gilroy-Medium.woff2") format("woff2"),
+         url("./fonts/Gilroy-Medium.woff") format("woff");
+ }
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/Gilroy-Bold.woff2") format("woff2"),
+         url("./fonts/Gilroy-Bold.woff") format("woff");
+ }
+@font-face {
+  font-family: "Gilroy-Reg";
+  src: url("./fonts/Gilroy-Regular.woff2") format("woff2"),
+         url("./fonts/Gilroy-Regular.woff") format("woff");
+ }
+.container{
+  max-width: 1267px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+  font-family:"Gilroy-Bold";
+  color: #3A3A3A;
+  font-size: 40px;
+  text-align: center;
+}
+img{
+  width: 70px;
+}
